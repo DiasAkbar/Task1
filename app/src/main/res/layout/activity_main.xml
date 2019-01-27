@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/article_heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Hello"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/article_subheading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_heading"
+        android:layout_marginTop="68dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Breaking"
+        android:textAppearance="@android:style/TextAppearance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/article_heading"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="378dp"
+        android:layout_height="305dp"
+        android:layout_below="@id/article_subheading"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintStart_toStartOf="@+id/article_heading"
+        app:layout_constraintTop_toTopOf="@+id/article_heading">
+
+        <TextView
+            android:id="@+id/article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:lineSpacingExtra="5sp"
+            android:text="
+        SEOUL - Jennie, the pivotal member of K-pop girl band Blackpink, and Kai from the boyband EXO split up less than one month after their romantic relationship was exposed by a media outlet, according to the latter's management agency on Friday (Jan 25). The former couple was put under intense media attention after their romantic relationship was revealed to the public on Jan 1 by a media outlet that secretly photographed the two while they were on a date. At that time, SM admitted to the romance between the members of the top K-pop groups, saying, 'The two people are in a relationship where they have good feelings towards each other.' The two artists continued to be active on the K-pop scene even amid the feverish media attention, with Jennie conquering local music charts with her first solo release Solo and going on a world concert tour as a member of Blackpink.
+            https://www.asiaone.com/entertainment/blackpinks-jennie-exos-kai-break-after-their-relationship-was-made-public-month"
+            tools:ignore="HardcodedText" />
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
